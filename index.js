@@ -20,7 +20,7 @@ $(document).ready(function() {
   // Event register here
   //-----------------------
 
-  $input.on('keyup', (event) => { 
+  $input.on('keyup change', (event) => { 
     const val = $input.val();
     const res = extractDescription(val);
     setResult(res);
