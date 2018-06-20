@@ -2,10 +2,17 @@
 
 A tool help my employees to calculate order price faster.
 
+# Demo
+
+Demo url: [https://tinhgia.banhtrangsitayninh.com/](https://tinhgia.banhtrangsitayninh.com/)
+
+![Demo image](./images/demo.gif)
+
+
 ## Getting Started
 
 
-Demo url: [https://tinhgia.banhtrangsitayninh.com/](https://tinhgia.banhtrangsitayninh.com/)
+
 
 Copy customer text and paste into the textarea. Wait for the result then copy it response to the customer.
 
