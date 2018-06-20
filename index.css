@@ -1,0 +1,11 @@
+#result {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  min-height: 10rem;
+  white-space: pre-line;
+  padding: 1rem;
+}
+
+#input {
+  min-height: 10rem;
+}
