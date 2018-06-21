@@ -168,10 +168,11 @@ describe('Test main function', () => {
     const expectedOutput = ''
                 + 'Sa tế tắc: 40 * 6k = 240k\n'
                 + 'Me: 20 * 6k = 120k\n'
+                + 'Muối đậu: 10 * 6k = 60k\n'
                 + 'Bơ: 5 * 10k = 50k\n'
                 + 'Khô gà: 3 * 230k = 690k\n'
                 + '____________________\n'
-                + 'Tổng tiền hàng: 1100k\n'
+                + 'Tổng tiền hàng: 1160k\n'
     expect(extractDescription(input)).toEqual(expectedOutput);
   });
 

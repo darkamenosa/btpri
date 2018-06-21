@@ -147,6 +147,8 @@ function breakSentence(sentence) {
             .replace(/\d+\s*tắc/g, '$&,')
             .replace(/\d+\s*tắt/g, '$&,')
             .replace(/\d+\s*tat/g, '$&,')
+            .replace(/\d+\s*sate ớt/g, '$&,')
+            .replace(/\d+\s*sate ot/g, '$&,')
 
 }
 
@@ -159,7 +161,7 @@ function matchCondition(line) {
 function detectProduct(line) {
   const testConditions = [
     { regex: /me|bánh tráng me|bt me|me/, output: 'bt_me'},
-    { regex: /bt muối|bánh tráng muối đậu|bt muoi|muoi dau/, output: 'bt_muoi_dau'},
+    { regex: /\d+\s*muối|\d+\s*muoi|muối đậu|bt muối|bánh tráng muối đậu|bt muoi|muoi dau/, output: 'bt_muoi_dau'},
     { regex: /tế tắc|tế tắt|sa tế tắc|sa te tac|sate ớt cay|ot cay/, output: 'bt_sa_te_tac'},
     { regex: /trộn tắc|trộn tắt|tron tat|bánh tráng trộn|tron tac|bt tron|tron/, output: 'bt_tron_tac'},
     { regex: /bơ|bánh bơ|bánh tráng bơ|banh trang bo|bo/, output: 'bt_bo'},
@@ -167,7 +169,7 @@ function detectProduct(line) {
     { regex: /dẻo cay|deo cay|cay dẻo|cay deo/, output: 'bt_deo_cay'},
     { regex: /dẻo me|deo me|me deo|me dẻo/, output: 'bt_deo_me'},
     { regex: /dẻo tôm|deo tom|tom deo|tôm dẻo/, output: 'bt_deo_tom'},
-    { regex: /hộp muối|hop muoi|hu muoi|hủ muối|hu muối|muối tôm|muoi tom/, output: 'muoi_tom'},
+    { regex: /kg muoi|kg muối|hộp muối|hop muoi|hu muoi|hủ muối|hu muối|muối tôm|muoi tom/, output: 'muoi_tom'},
     { regex: /muối chay|muoi chay|muoi ot/, output: 'muoi_chay'},
     { regex: /cha bong|chà bông|bt chà bông/, output: 'bt_cha_bong'},
     { regex: /kho ga|khô gà/, output: 'kho_ga'},
