@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import $ from 'jquery';
-import { extractDescription } from './src';
+import { extractCustomerDescription } from 'btprilib';
 
 $(document).ready(function() {
   const $input = $('#input');
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   $input.on('keyup change', (event) => { 
     const val = $input.val();
-    const res = extractDescription(val);
+    const res = extractCustomerDescription(val);
     setResult(res);
   });
 });
